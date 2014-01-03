@@ -1,0 +1,171 @@
+2014-01-03T22:25:24.037Z - info: Server started.
+2014-01-03T22:25:24.136Z - error: Application not found.
+2014-01-03T22:25:24.140Z - info: Beginning update.
+2014-01-03T22:25:24.148Z - info: Downloading http://content.stimulant.io/uploads/mvi_video_app/mvi_video.zip
+2014-01-03T22:25:24.618Z - info: http://content.stimulant.io/uploads/mvi_video_app/mvi_video.zip loaded, 0 to go
+2014-01-03T22:25:24.621Z - info: App download complete! Fri Jan 03 2014 14:25:24 GMT-0800
+2014-01-03T22:25:25.382Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Millines_Dziko.jpg
+2014-01-03T22:25:25.386Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/_thumb/Millines_Dziko.jpg
+2014-01-03T22:25:25.389Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Millines_Dziko.mp4
+2014-01-03T22:25:25.392Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Millines_Dziko_habits.mp4
+2014-01-03T22:25:25.395Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Millines_Dziko_habits.xml
+2014-01-03T22:25:25.401Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Schultz.jpg
+2014-01-03T22:25:25.403Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/_thumb/Schultz.jpg
+2014-01-03T22:25:25.404Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Schultz.mp4
+2014-01-03T22:25:25.406Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Schultz_habits.mp4
+2014-01-03T22:25:25.408Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Schultz_habits.xml
+2014-01-03T22:25:25.409Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Roth.jpg
+2014-01-03T22:25:25.411Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/_thumb/Roth.jpg
+2014-01-03T22:25:25.415Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Roth.mp4
+2014-01-03T22:25:25.417Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Roth_habits.mp4
+2014-01-03T22:25:25.419Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Roth_habits.xml
+2014-01-03T22:25:25.421Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Woolley-Wilson.jpg
+2014-01-03T22:25:25.423Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/_thumb/Woolley-Wilson.jpg
+2014-01-03T22:25:25.425Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Woolley-Wilson.mp4
+2014-01-03T22:25:25.427Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Woolley_Wilson_habits.mp4
+2014-01-03T22:25:25.429Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Woolley_Wilson_habits.xml
+2014-01-03T22:25:25.431Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Bezos.jpg
+2014-01-03T22:25:25.433Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/_thumb/Bezos.jpg
+2014-01-03T22:25:25.435Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Bezos.mp4
+2014-01-03T22:25:25.438Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Bezos_habits.mp4
+2014-01-03T22:25:25.441Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Bezos_habits.xml
+2014-01-03T22:25:25.443Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Myhrvold.jpg
+2014-01-03T22:25:25.444Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/_thumb/Myhrvold.jpg
+2014-01-03T22:25:25.447Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Myhrvold.mp4
+2014-01-03T22:25:25.449Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Myhrvold_habits.mp4
+2014-01-03T22:25:25.450Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Myhrvold_habits.xml
+2014-01-03T22:25:25.452Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Whitten.jpg
+2014-01-03T22:25:25.454Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/_thumb/Whitten.jpg
+2014-01-03T22:25:25.456Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Whitten.mp4
+2014-01-03T22:25:25.457Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Whitten_habits.mp4
+2014-01-03T22:25:25.459Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Whitten_habits.xml
+2014-01-03T22:25:25.461Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Martinez.jpg
+2014-01-03T22:25:25.463Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/_thumb/Martinez.jpg
+2014-01-03T22:25:25.464Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Martinez.mp4
+2014-01-03T22:25:25.466Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Martinez_habits.mp4
+2014-01-03T22:25:25.468Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Martinez_habits.xml
+2014-01-03T22:25:25.470Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Liu.jpg
+2014-01-03T22:25:25.473Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/_thumb/Liu.jpg
+2014-01-03T22:25:25.475Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Liu.mp4
+2014-01-03T22:25:25.477Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Liu_habits.mp4
+2014-01-03T22:25:25.480Z - info: Downloading http://content.stimulant.io/uploads/mvi_video/Liu_habits.xml
+2014-01-03T22:25:25.572Z - info: http://content.stimulant.io/uploads/mvi_video/_thumb/Millines_Dziko.jpg loaded, 44 to go
+2014-01-03T22:25:26.185Z - info: http://content.stimulant.io/uploads/mvi_video/Schultz.jpg loaded, 43 to go
+2014-01-03T22:25:26.214Z - info: http://content.stimulant.io/uploads/mvi_video/_thumb/Schultz.jpg cached, 42 to go
+2014-01-03T22:25:26.551Z - info: http://content.stimulant.io/uploads/mvi_video/Millines_Dziko.jpg loaded, 41 to go
+2014-01-03T22:25:27.395Z - info: http://content.stimulant.io/uploads/mvi_video/Millines_Dziko_habits.xml cached, 40 to go
+2014-01-03T22:25:27.421Z - info: http://content.stimulant.io/uploads/mvi_video/Schultz_habits.xml cached, 39 to go
+2014-01-03T22:25:27.757Z - info: http://content.stimulant.io/uploads/mvi_video/Roth.jpg loaded, 38 to go
+2014-01-03T22:25:27.837Z - info: http://content.stimulant.io/uploads/mvi_video/_thumb/Roth.jpg loaded, 37 to go
+2014-01-03T22:25:29.631Z - info: http://content.stimulant.io/uploads/mvi_video/Roth.mp4 loaded, 36 to go
+2014-01-03T22:25:29.886Z - info: http://content.stimulant.io/uploads/mvi_video/Millines_Dziko.mp4 loaded, 35 to go
+2014-01-03T22:25:29.912Z - info: http://content.stimulant.io/uploads/mvi_video/Roth_habits.xml cached, 34 to go
+2014-01-03T22:25:30.727Z - info: http://content.stimulant.io/uploads/mvi_video/Woolley-Wilson.jpg loaded, 33 to go
+2014-01-03T22:25:30.781Z - info: http://content.stimulant.io/uploads/mvi_video/_thumb/Woolley-Wilson.jpg loaded, 32 to go
+2014-01-03T22:25:32.415Z - info: http://content.stimulant.io/uploads/mvi_video/Schultz.mp4 loaded, 31 to go
+2014-01-03T22:25:33.660Z - info: http://content.stimulant.io/uploads/mvi_video/Woolley-Wilson.mp4 loaded, 30 to go
+2014-01-03T22:25:33.682Z - info: http://content.stimulant.io/uploads/mvi_video/Woolley_Wilson_habits.xml cached, 29 to go
+2014-01-03T22:25:34.415Z - info: http://content.stimulant.io/uploads/mvi_video/Bezos.jpg loaded, 28 to go
+2014-01-03T22:25:34.443Z - info: http://content.stimulant.io/uploads/mvi_video/_thumb/Bezos.jpg cached, 27 to go
+2014-01-03T22:25:36.686Z - info: http://content.stimulant.io/uploads/mvi_video/Bezos.mp4 loaded, 26 to go
+2014-01-03T22:27:53.344Z - info: http://content.stimulant.io/uploads/mvi_video/Schultz_habits.mp4 loaded, 25 to go
+2014-01-03T22:27:53.678Z - info: http://content.stimulant.io/uploads/mvi_video/Bezos_habits.xml cached, 24 to go
+2014-01-03T22:27:54.202Z - info: http://content.stimulant.io/uploads/mvi_video/Myhrvold.jpg loaded, 23 to go
+2014-01-03T22:27:54.546Z - info: http://content.stimulant.io/uploads/mvi_video/_thumb/Myhrvold.jpg loaded, 22 to go
+2014-01-03T22:27:57.595Z - info: http://content.stimulant.io/uploads/mvi_video/Myhrvold.mp4 loaded, 21 to go
+2014-01-03T22:29:51.907Z - info: http://content.stimulant.io/uploads/mvi_video/Bezos_habits.mp4 loaded, 20 to go
+2014-01-03T22:29:52.780Z - info: http://content.stimulant.io/uploads/mvi_video/Myhrvold_habits.xml cached, 19 to go
+2014-01-03T22:29:53.589Z - info: http://content.stimulant.io/uploads/mvi_video/Whitten.jpg loaded, 18 to go
+2014-01-03T22:29:53.654Z - info: http://content.stimulant.io/uploads/mvi_video/_thumb/Whitten.jpg cached, 17 to go
+2014-01-03T22:30:07.281Z - info: http://content.stimulant.io/uploads/mvi_video/Whitten.mp4 loaded, 16 to go
+2014-01-03T22:30:24.582Z - info: http://content.stimulant.io/uploads/mvi_video/Myhrvold_habits.mp4 loaded, 15 to go
+2014-01-03T22:30:24.898Z - info: http://content.stimulant.io/uploads/mvi_video/Whitten_habits.xml cached, 14 to go
+2014-01-03T22:30:25.597Z - info: http://content.stimulant.io/uploads/mvi_video/Martinez.jpg loaded, 13 to go
+2014-01-03T22:30:25.703Z - info: http://content.stimulant.io/uploads/mvi_video/_thumb/Martinez.jpg loaded, 12 to go
+2014-01-03T22:30:55.539Z - info: http://content.stimulant.io/uploads/mvi_video/Martinez.mp4 loaded, 11 to go
+2014-01-03T22:30:57.250Z - info: http://content.stimulant.io/uploads/mvi_video/Roth_habits.mp4 loaded, 10 to go
+2014-01-03T22:30:58.509Z - info: http://content.stimulant.io/uploads/mvi_video/Martinez_habits.xml cached, 9 to go
+2014-01-03T22:30:59.247Z - info: http://content.stimulant.io/uploads/mvi_video/Liu.jpg loaded, 8 to go
+2014-01-03T22:30:59.290Z - info: http://content.stimulant.io/uploads/mvi_video/_thumb/Liu.jpg cached, 7 to go
+2014-01-03T22:31:01.667Z - info: http://content.stimulant.io/uploads/mvi_video/Liu.mp4 loaded, 6 to go
+2014-01-03T22:31:18.698Z - info: http://content.stimulant.io/uploads/mvi_video/Millines_Dziko_habits.mp4 loaded, 5 to go
+2014-01-03T22:31:19.345Z - info: http://content.stimulant.io/uploads/mvi_video/Liu_habits.xml cached, 4 to go
+2014-01-03T22:31:27.664Z - info: http://content.stimulant.io/uploads/mvi_video/Woolley_Wilson_habits.mp4 loaded, 3 to go
+2014-01-03T22:32:37.592Z - info: http://content.stimulant.io/uploads/mvi_video/Whitten_habits.mp4 loaded, 2 to go
+2014-01-03T22:32:54.321Z - info: http://content.stimulant.io/uploads/mvi_video/Martinez_habits.mp4 loaded, 1 to go
+2014-01-03T22:32:55.071Z - info: http://content.stimulant.io/uploads/mvi_video/Liu_habits.mp4 loaded, 0 to go
+2014-01-03T22:32:55.076Z - info: Content download complete! Fri Jan 03 2014 14:32:55 GMT-0800
+2014-01-03T22:32:55.217Z - info: Unzipping app.
+2014-01-03T22:32:55.519Z - info: App update complete! Fri Jan 03 2014 14:32:55 GMT-0800
+2014-01-03T22:32:56.417Z - info: Content update complete! Fri Jan 03 2014 14:32:56 GMT-0800
+2014-01-03T22:32:56.557Z - info: App starting up.
+2014-01-03T22:33:01.603Z - error: App went away. 1
+2014-01-03T22:33:02.273Z - info: App shut down by force.
+2014-01-03T22:33:02.400Z - info: App starting up.
+2014-01-03T22:33:54.850Z - info: Server started.
+2014-01-03T22:33:54.948Z - info: App starting up.
+2014-01-03T22:34:41.009Z - info: Server started.
+2014-01-03T22:34:41.119Z - info: App starting up.
+2014-01-03T22:34:41.371Z - info: App started.
+2014-01-03T22:34:43.268Z - info: Server started.
+2014-01-03T22:34:43.365Z - info: App starting up.
+2014-01-03T22:34:43.611Z - info: App started.
+2014-01-03T22:34:49.479Z - info: Server started.
+2014-01-03T22:34:49.576Z - info: App starting up.
+2014-01-03T22:34:49.822Z - info: App started.
+2014-01-03T22:35:03.078Z - info: Restart requested from console.
+2014-01-03T22:35:03.712Z - info: App shut down by force.
+2014-01-03T22:35:03.787Z - info: App starting up.
+2014-01-03T22:35:04.031Z - info: App started.
+2014-01-03T22:35:08.461Z - info: Beginning update.
+2014-01-03T22:35:08.632Z - info: http://content.stimulant.io/uploads/mvi_video_app/mvi_video.zip cached, 0 to go
+2014-01-03T22:35:08.636Z - info: App download complete! Fri Jan 03 2014 14:35:08 GMT-0800
+2014-01-03T22:35:10.030Z - info: http://content.stimulant.io/uploads/mvi_video/Millines_Dziko.jpg cached, 44 to go
+2014-01-03T22:35:10.036Z - info: http://content.stimulant.io/uploads/mvi_video/_thumb/Millines_Dziko.jpg cached, 43 to go
+2014-01-03T22:35:10.062Z - info: http://content.stimulant.io/uploads/mvi_video/Schultz.jpg cached, 42 to go
+2014-01-03T22:35:10.065Z - info: http://content.stimulant.io/uploads/mvi_video/_thumb/Schultz.jpg cached, 41 to go
+2014-01-03T22:35:10.091Z - info: http://content.stimulant.io/uploads/mvi_video/Schultz.mp4 cached, 40 to go
+2014-01-03T22:35:10.094Z - info: http://content.stimulant.io/uploads/mvi_video/Schultz_habits.mp4 cached, 39 to go
+2014-01-03T22:35:10.120Z - info: http://content.stimulant.io/uploads/mvi_video/Schultz_habits.xml cached, 38 to go
+2014-01-03T22:35:10.124Z - info: http://content.stimulant.io/uploads/mvi_video/Roth.jpg cached, 37 to go
+2014-01-03T22:35:10.149Z - info: http://content.stimulant.io/uploads/mvi_video/_thumb/Roth.jpg cached, 36 to go
+2014-01-03T22:35:10.153Z - info: http://content.stimulant.io/uploads/mvi_video/Roth.mp4 cached, 35 to go
+2014-01-03T22:35:10.178Z - info: http://content.stimulant.io/uploads/mvi_video/Roth_habits.mp4 cached, 34 to go
+2014-01-03T22:35:10.181Z - info: http://content.stimulant.io/uploads/mvi_video/Roth_habits.xml cached, 33 to go
+2014-01-03T22:35:10.207Z - info: http://content.stimulant.io/uploads/mvi_video/Woolley-Wilson.jpg cached, 32 to go
+2014-01-03T22:35:10.210Z - info: http://content.stimulant.io/uploads/mvi_video/_thumb/Woolley-Wilson.jpg cached, 31 to go
+2014-01-03T22:35:10.236Z - info: http://content.stimulant.io/uploads/mvi_video/Woolley-Wilson.mp4 cached, 30 to go
+2014-01-03T22:35:10.238Z - info: http://content.stimulant.io/uploads/mvi_video/Woolley_Wilson_habits.mp4 cached, 29 to go
+2014-01-03T22:35:10.264Z - info: http://content.stimulant.io/uploads/mvi_video/Woolley_Wilson_habits.xml cached, 28 to go
+2014-01-03T22:35:10.267Z - info: http://content.stimulant.io/uploads/mvi_video/Bezos.jpg cached, 27 to go
+2014-01-03T22:35:10.293Z - info: http://content.stimulant.io/uploads/mvi_video/_thumb/Bezos.jpg cached, 26 to go
+2014-01-03T22:35:10.295Z - info: http://content.stimulant.io/uploads/mvi_video/Bezos.mp4 cached, 25 to go
+2014-01-03T22:35:10.321Z - info: http://content.stimulant.io/uploads/mvi_video/Bezos_habits.mp4 cached, 24 to go
+2014-01-03T22:35:10.324Z - info: http://content.stimulant.io/uploads/mvi_video/Bezos_habits.xml cached, 23 to go
+2014-01-03T22:35:10.350Z - info: http://content.stimulant.io/uploads/mvi_video/Myhrvold.jpg cached, 22 to go
+2014-01-03T22:35:10.353Z - info: http://content.stimulant.io/uploads/mvi_video/_thumb/Myhrvold.jpg cached, 21 to go
+2014-01-03T22:35:10.379Z - info: http://content.stimulant.io/uploads/mvi_video/Myhrvold.mp4 cached, 20 to go
+2014-01-03T22:35:10.383Z - info: http://content.stimulant.io/uploads/mvi_video/Myhrvold_habits.mp4 cached, 19 to go
+2014-01-03T22:35:10.408Z - info: http://content.stimulant.io/uploads/mvi_video/Myhrvold_habits.xml cached, 18 to go
+2014-01-03T22:35:10.411Z - info: http://content.stimulant.io/uploads/mvi_video/Whitten.jpg cached, 17 to go
+2014-01-03T22:35:10.437Z - info: http://content.stimulant.io/uploads/mvi_video/_thumb/Whitten.jpg cached, 16 to go
+2014-01-03T22:35:10.439Z - info: http://content.stimulant.io/uploads/mvi_video/Whitten.mp4 cached, 15 to go
+2014-01-03T22:35:10.449Z - info: http://content.stimulant.io/uploads/mvi_video/Millines_Dziko.mp4 cached, 14 to go
+2014-01-03T22:35:10.465Z - info: http://content.stimulant.io/uploads/mvi_video/Whitten_habits.mp4 cached, 13 to go
+2014-01-03T22:35:10.468Z - info: http://content.stimulant.io/uploads/mvi_video/Whitten_habits.xml cached, 12 to go
+2014-01-03T22:35:10.478Z - info: http://content.stimulant.io/uploads/mvi_video/Martinez.jpg cached, 11 to go
+2014-01-03T22:35:10.494Z - info: http://content.stimulant.io/uploads/mvi_video/_thumb/Martinez.jpg cached, 10 to go
+2014-01-03T22:35:10.496Z - info: http://content.stimulant.io/uploads/mvi_video/Martinez.mp4 cached, 9 to go
+2014-01-03T22:35:10.506Z - info: http://content.stimulant.io/uploads/mvi_video/Martinez_habits.mp4 cached, 8 to go
+2014-01-03T22:35:10.522Z - info: http://content.stimulant.io/uploads/mvi_video/Martinez_habits.xml cached, 7 to go
+2014-01-03T22:35:10.526Z - info: http://content.stimulant.io/uploads/mvi_video/Liu.jpg cached, 6 to go
+2014-01-03T22:35:10.535Z - info: http://content.stimulant.io/uploads/mvi_video/_thumb/Liu.jpg cached, 5 to go
+2014-01-03T22:35:10.551Z - info: http://content.stimulant.io/uploads/mvi_video/Liu.mp4 cached, 4 to go
+2014-01-03T22:35:10.555Z - info: http://content.stimulant.io/uploads/mvi_video/Liu_habits.mp4 cached, 3 to go
+2014-01-03T22:35:10.564Z - info: http://content.stimulant.io/uploads/mvi_video/Liu_habits.xml cached, 2 to go
+2014-01-03T22:35:10.579Z - info: http://content.stimulant.io/uploads/mvi_video/Millines_Dziko_habits.mp4 cached, 1 to go
+2014-01-03T22:35:10.584Z - info: http://content.stimulant.io/uploads/mvi_video/Millines_Dziko_habits.xml cached, 0 to go
+2014-01-03T22:35:10.585Z - info: Content download complete! Fri Jan 03 2014 14:35:10 GMT-0800
+2014-01-03T22:35:19.330Z - error: App went away. 1
+2014-01-03T22:35:19.469Z - info: App starting up.
+2014-01-03T22:35:19.710Z - info: App started.
