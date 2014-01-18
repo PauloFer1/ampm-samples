@@ -1,2 +1,2 @@
-cd ../ampm
-nodemon -q -e js,json server.js ../WPF-test/config.json
+cd ../../ampm
+nodemon -q -e js,json server.js ../ampm-test/WPF-test/config.json
