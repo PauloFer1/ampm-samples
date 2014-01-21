@@ -10,14 +10,21 @@
 		"temp": "../ampm-test/WPF-test/content.tmp/"
 	},
 	"persistence": {
-		"processName": "client.exe"
+		"processName": "client.exe",
+		"shutdownSchedule": "0 0 * * 1-5",
+		"startupSchedule": "0 8 * * 1-5",
+		"updateSchedule": "0 1 * * 1-5",
+		"restartSchedule": "0 12 * * 1-5"
 	},
 	"logging": {
 		"file": {
-			"filename": "../ampm-test/WPF-test/logs/server.log",
-			"maxsize": 1048576,
-			"json": false,
-			"level": "info"
+			"filename": "../ampm-test/WPF-test/logs/server.log"
+		},
+		"mail": {
+			"enabled": false
+		},
+		"loggly": {
+			"tags": "WPF-test"
 		}
 	}
 }

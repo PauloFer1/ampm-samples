@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
@@ -54,6 +55,10 @@ namespace Client
                 Logger.Error(exception == null ? e.ToString() : exception.Message + Environment.NewLine + exception.StackTrace);
                 Application.Current.MainWindow.Close();
             };
+
+            HotKeyManager.RegisterHotKey(System.Windows.Forms.Keys.Enter, KeyModifiers.NoRepeat);
+            HotKeyManager.HotKeyPressed += (sender, e) => Process.Start("http://localhost:3000");
+
 
             /*
             // Handle incoming OSC messages.
