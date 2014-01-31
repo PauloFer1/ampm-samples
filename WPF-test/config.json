@@ -11,6 +11,8 @@
 	},
 	"persistence": {
 		"processName": "client.exe",
+		"startupTimeout": 10,
+		"heartbeatTimeout": 5,
 		"shutdownSchedule": "0 0 * * 1-5",
 		"startupSchedule": "0 8 * * 1-5",
 		"updateSchedule": "0 1 * * 1-5",
