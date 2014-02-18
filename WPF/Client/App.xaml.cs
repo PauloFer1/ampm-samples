@@ -56,8 +56,8 @@ namespace Client
                 Application.Current.MainWindow.Close();
             };
 
-            HotKeyManager.RegisterHotKey(System.Windows.Forms.Keys.Enter, KeyModifiers.NoRepeat);
-            HotKeyManager.HotKeyPressed += (sender, e) => Process.Start("http://localhost:3000");
+            // HotKeyManager.RegisterHotKey(System.Windows.Forms.Keys.Enter, KeyModifiers.NoRepeat);
+            // HotKeyManager.HotKeyPressed += (sender, e) => Process.Start("http://localhost:3000");
 
 
             /*
