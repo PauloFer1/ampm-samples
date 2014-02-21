@@ -1,9 +1,7 @@
 content/
-content.temp/
-content.backup/
 app/
-app.temp/
-app.backup/
+*.temp/
+*.backup/
 packages/
 bin/
 obj/
