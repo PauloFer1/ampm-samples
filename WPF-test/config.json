@@ -25,6 +25,9 @@
 		},
 		"loggly": {
 			"tags": "WPF-test"
+		},
+		"console": {
+			"timestamp": false
 		}
 	}
 }
