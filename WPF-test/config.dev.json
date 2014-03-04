@@ -6,7 +6,8 @@
 	"contentUpdater": {
 		"remote": {
 			"live": "http://mvi_video:funk0@content.stimulant.io/mvi_video/category/6",
-			"draft": "http://mvi_video:funk0@content.stimulant.io/mvi_video/category/6"
+			"draft": "http://mvi_video:funk0@content.stimulant.io/mvi_video/category/6",
+			"directory": "http://content.stimulant.io/uploads/mvi_video/"
 		},
 		"local": "../ampm-test/wpf-test/content"
 	},
