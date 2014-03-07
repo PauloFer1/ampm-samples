@@ -1,6 +1,6 @@
 {
 	"appUpdater": {
-		"remote": "http://content.stimulant.io/uploads/mvi_video_app/mvi_video.zip",
+		"remote": "http://content.stimulant.io/uploads/mvi_video_app/WEB.zip",
 		"local": "../ampm-test/WEB-test/app"
 	},
 	"contentUpdater": {
