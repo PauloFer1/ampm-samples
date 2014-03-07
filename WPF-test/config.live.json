@@ -11,7 +11,7 @@
 		"local": "../../content"
 	},
 	"persistence": {
-		"processName": "client.exe",
+		"launchCommand": "../client.exe {config}",
 		"startupTimeout": 10,
 		"heartbeatTimeout": 5,
 		"shutdownSchedule": "0 0 * * 1-5",
