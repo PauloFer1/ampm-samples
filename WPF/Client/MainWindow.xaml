@@ -17,5 +17,12 @@
             <Button Content="slow" Click="Slow_Click" />
         </UniformGrid>
         <TextBox Grid.Row="1" x:Name="_Config" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        <Canvas Grid.Row="1">
+            <Ellipse Width="20" Height="20" Fill="Red" RenderTransformOrigin=".5,.5">
+                <Ellipse.RenderTransform>
+                    <TranslateTransform />
+                </Ellipse.RenderTransform>
+            </Ellipse>
+        </Canvas>
     </Grid>
 </Window>

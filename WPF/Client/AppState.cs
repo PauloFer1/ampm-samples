@@ -28,5 +28,6 @@ namespace Client
         }
 
         public JToken Config { get; set; }
+        public JToken SharedState { get; set; }
     }
 }

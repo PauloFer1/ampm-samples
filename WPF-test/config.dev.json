@@ -32,5 +32,6 @@
 		"console": {
 			"timestamp": false
 		}
-	}
+	},
+	"sharedState": "../ampm-test/sharedState.js"
 }

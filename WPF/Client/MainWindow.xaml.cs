@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows;
+using System.Windows.Media;
 using Ampm;
 
 namespace Client
@@ -19,6 +20,12 @@ namespace Client
             {
                 _Config.Text = AppState.Instance.Config.ToString();
             }
+
+            CompositionTarget.Rendering += CompositionTarget_Rendering;
+        }
+
+        void CompositionTarget_Rendering(object sender, EventArgs e)
+        {
         }
 
         private void Hang_Click(object sender, RoutedEventArgs e)
