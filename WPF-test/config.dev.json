@@ -19,6 +19,9 @@
 		"updateSchedule": "0 1 * * 1-5",
 		"restartSchedule": "0 12 * * 1-5"
 	},
+	"network": {
+		"peers": ["jenkins", "devopsbeta", "trac", "I14"]
+	},
 	"logging": {
 		"file": {
 			"filename": "../ampm-test/wpf-test/logs/server.log"
