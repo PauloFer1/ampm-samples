@@ -11,9 +11,9 @@
 		"local": "../ampm-test/wpf-test/content"
 	},
 	"persistence": {
-		"launchCommand": "../ampm-test/wpf-test/app/client.exe {config}",
-		"startupTimeout": 10,
-		"heartbeatTimeout": 5,
+		"launchCommand": "",
+		"startupTimeout": 10000,
+		"heartbeatTimeout": 5000,
 		"shutdownSchedule": "0 0 * * 1-5",
 		"startupSchedule": "0 8 * * 1-5",
 		"updateSchedule": "0 1 * * 1-5",
