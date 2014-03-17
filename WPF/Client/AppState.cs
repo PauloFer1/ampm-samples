@@ -1,7 +1,4 @@
 ﻿
-using System;
-using System.Collections.Generic;
-using System.Windows;
 using Newtonsoft.Json.Linq;
 
 namespace Client

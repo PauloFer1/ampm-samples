@@ -4,6 +4,7 @@ using System.Net;
 using System.Web.Script.Serialization;
 using System.Windows;
 using System.Windows.Media;
+using System.Windows.Threading;
 using Ampm;
 using Bespoke.Common.Osc;
 using Newtonsoft.Json;
@@ -92,7 +93,10 @@ namespace Client
         private void Server_MessageReceived(object sender, OscMessageReceivedEventArgs e)
         {
             string data = e.Message.Data.FirstOrDefault() as string;
-            AppState.Instance.SharedState = data == null ? null : JObject.Parse(data);
+            Dispatcher.BeginInvoke((Action)(() =>
+            {
+                AppState.Instance.SharedState = data == null ? null : JObject.Parse(data);
+            }), DispatcherPriority.Input);
         }
     }
 }

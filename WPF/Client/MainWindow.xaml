@@ -7,6 +7,14 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+        <TextBox Grid.Row="1" x:Name="_Config" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        <Canvas Grid.Row="1" x:Name="_DotContainer">
+            <Ellipse x:Name="_Dot" Width="20" Height="20" Fill="Red" RenderTransformOrigin=".5,.5">
+                <Ellipse.RenderTransform>
+                    <TranslateTransform />
+                </Ellipse.RenderTransform>
+            </Ellipse>
+        </Canvas>
         <UniformGrid Rows="1">
             <Button Content="crash" Click="Crash_Click" />
             <Button Content="hang" Click="Hang_Click"/>
@@ -16,13 +24,5 @@
             <Button Content="gc" Click="GC_Click" />
             <Button Content="slow" Click="Slow_Click" />
         </UniformGrid>
-        <TextBox Grid.Row="1" x:Name="_Config" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
-        <Canvas Grid.Row="1">
-            <Ellipse Width="20" Height="20" Fill="Red" RenderTransformOrigin=".5,.5">
-                <Ellipse.RenderTransform>
-                    <TranslateTransform />
-                </Ellipse.RenderTransform>
-            </Ellipse>
-        </Canvas>
     </Grid>
 </Window>

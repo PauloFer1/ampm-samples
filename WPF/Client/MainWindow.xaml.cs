@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows;
+using System.Windows.Input;
 using System.Windows.Media;
 using Ampm;
 
@@ -26,6 +27,25 @@ namespace Client
 
         void CompositionTarget_Rendering(object sender, EventArgs e)
         {
+            if (AppState.Instance.SharedState == null)
+            {
+                return;
+            }
+
+            (_Dot.RenderTransform as TranslateTransform).X = (int)AppState.Instance.SharedState["x"] - _Dot.ActualWidth / 2;
+            (_Dot.RenderTransform as TranslateTransform).Y = (int)AppState.Instance.SharedState["y"] - _Dot.ActualHeight / 2;
+        }
+
+        protected override void OnMouseMove(MouseEventArgs e)
+        {
+            if (AppState.Instance.SharedState == null)
+            {
+                return;
+            }
+
+            AppState.Instance.SharedState["x"] = e.GetPosition(_DotContainer).X;
+            AppState.Instance.SharedState["y"] = e.GetPosition(_DotContainer).Y;
+            base.OnMouseMove(e);
         }
 
         private void Hang_Click(object sender, RoutedEventArgs e)
