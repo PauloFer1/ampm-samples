@@ -1,5 +1,6 @@
 var path = require('path'); //http://nodejs.org/api/path.html
 var fs = require('fs'); // http://nodejs.org/api/fs.html
+var os = require('os'); // http://nodejs.org/api/os.html
 
 // Figure out where the modules are.
 var devModules = '../ampm/node_modules';
@@ -18,5 +19,15 @@ exports.SharedState = Backbone.Model.extend({
 	defaults: {
 		x: 0,
 		y: 0
+	},
+
+	// This is the object that will be sent to other peers.
+	shared: null,
+
+	initialize: function() {
+
+		// By default just send the model's attributes, but you could create
+		// another object and sync it if you don't want to send everything.
+		this.shared = this.attributes;
 	}
 });

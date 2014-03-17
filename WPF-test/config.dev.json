@@ -17,10 +17,10 @@
 		"shutdownSchedule": "0 0 * * 1-5",
 		"startupSchedule": "0 8 * * 1-5",
 		"updateSchedule": "0 1 * * 1-5",
-		"restartSchedule": "0 12 * * 1-5"
+		"restartSchedule": "0 0 * * 1-5"
 	},
 	"network": {
-		"peers": ["jenkins", "devopsbeta", "trac", "I14"]
+		"peers": ["devopsbeta", "I14"]
 	},
 	"logging": {
 		"file": {
