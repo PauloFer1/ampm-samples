@@ -37,7 +37,7 @@ namespace AmpmLib
 
         static Ampm()
         {
-            _SocketToServer = new SocketIOClient.Client("http://localhost:3001") { RetryConnectionAttempts = 99 };
+            _SocketToServer = new SocketIOClient.Client("http://localhost:3001");
             _SocketToServer.Opened += Socket_Opened;
             _SocketToServer.Connect();
             _SocketToServer.SocketConnectionClosed += (sender, e) => _SocketToServer.Connect();
