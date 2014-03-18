@@ -29,5 +29,18 @@ exports.SharedState = Backbone.Model.extend({
 		// By default just send the model's attributes, but you could create
 		// another object and sync it if you don't want to send everything.
 		this.shared = this.attributes;
+
+		// Listen for TCP events from the app.
+		$$network.transports.socketToApp.sockets.on('connection', _.bind(function(socket) {
+			socket.on('mouse', _.bind(function(data) {
+				this.set('x', data.x);
+				this.set('y', data.y);
+			}, this));
+		}, this));
+
+		// Listen for UDP events from the app.
+		$$network.transports.oscFromApp.on('heart', _.bind(function(data) {
+			// console.log(data);
+		}, this));
 	}
 });

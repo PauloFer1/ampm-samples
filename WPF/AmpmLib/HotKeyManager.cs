@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace Ampm
+namespace AmpmLib
 {
     /// <summary>
     /// http://stackoverflow.com/a/3654821/468472

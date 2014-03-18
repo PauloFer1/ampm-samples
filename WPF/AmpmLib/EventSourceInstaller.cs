@@ -5,7 +5,7 @@ using System.Linq;
 using System.Reflection;
 using Microsoft.Diagnostics.Tracing;
 
-namespace Ampm
+namespace AmpmLib
 {
     /// <summary>
     /// Handles the crazy logic required to install an Event Viewer source.

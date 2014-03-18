@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
-using Ampm;
+using AmpmLib;
 
 namespace Client
 {
@@ -22,6 +23,7 @@ namespace Client
                 _Config.Text = AppState.Instance.Config.ToString();
             }
 
+            AppState.Instance.PropertyChanged += Instance_PropertyChanged;
             CompositionTarget.Rendering += CompositionTarget_Rendering;
         }
 
@@ -36,15 +38,25 @@ namespace Client
             (_Dot.RenderTransform as TranslateTransform).Y = (int)AppState.Instance.SharedState["y"] - _Dot.ActualHeight / 2;
         }
 
-        protected override void OnMouseMove(MouseEventArgs e)
+        void Instance_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            if (AppState.Instance.SharedState == null)
+            if (e.PropertyName != "SharedState" || AppState.Instance.SharedState == null)
             {
                 return;
             }
 
-            AppState.Instance.SharedState["x"] = e.GetPosition(_DotContainer).X;
-            AppState.Instance.SharedState["y"] = e.GetPosition(_DotContainer).Y;
+            (_Dot.RenderTransform as TranslateTransform).X = (int)AppState.Instance.SharedState["x"] - _Dot.ActualWidth / 2;
+            (_Dot.RenderTransform as TranslateTransform).Y = (int)AppState.Instance.SharedState["y"] - _Dot.ActualHeight / 2;
+        }
+
+        protected override void OnMouseMove(MouseEventArgs e)
+        {
+            Ampm.TcpEvent("mouse", new
+            {
+                x = e.GetPosition(_DotContainer).X,
+                y = e.GetPosition(_DotContainer).Y,
+            });
+
             base.OnMouseMove(e);
         }
 
@@ -57,14 +69,14 @@ namespace Client
 
         private void Log_Click(object sender, RoutedEventArgs e)
         {
-            Logger.Info("informational!");
-            Logger.Warning("warning!");
-            Logger.Error("error!");
+            Ampm.Info("informational!");
+            Ampm.Warning("warning!");
+            Ampm.Error("error!");
         }
 
         private void Event_Click(object sender, RoutedEventArgs e)
         {
-            Logger.Event("app event", "clicked", "button", 2);
+            Ampm.LogEvent("app event", "clicked", "button", 2);
         }
 
         private void Crash_Click(object sender, RoutedEventArgs e)

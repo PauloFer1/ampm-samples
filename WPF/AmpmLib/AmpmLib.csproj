@@ -7,8 +7,8 @@
     <ProjectGuid>{22A89612-F2F4-48DA-8462-895ADBB5B5D5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ampm</RootNamespace>
-    <AssemblyName>Ampm</AssemblyName>
+    <RootNamespace>Ampm.Lib.Lib</RootNamespace>
+    <AssemblyName>Ampm.Lib</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bespoke.Common">
+      <HintPath>..\packages\Bespoke-OSC-Library.1.0.0\lib\Bespoke.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Bespoke.Common.Osc">
+      <HintPath>..\packages\Bespoke-OSC-Library.1.0.0\lib\Bespoke.Common.Osc.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Diagnostics.Tracing.EventSource, Version=1.0.16.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.Diagnostics.Tracing.EventSource.1.0.16\lib\net40\Microsoft.Diagnostics.Tracing.EventSource.dll</HintPath>
@@ -58,7 +64,7 @@
     <Compile Include="AmpmEventSource.cs" />
     <Compile Include="EventSourceInstaller.cs" />
     <Compile Include="HotKeyManager.cs" />
-    <Compile Include="Logger.cs" />
+    <Compile Include="Ampm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

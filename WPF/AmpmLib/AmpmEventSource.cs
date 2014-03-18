@@ -1,6 +1,6 @@
 ﻿using Microsoft.Diagnostics.Tracing;
 
-namespace Ampm
+namespace AmpmLib
 {
     /// <summary>
     /// The EventSource used to write logs to the event viewer.
