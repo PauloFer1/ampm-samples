@@ -11,7 +11,7 @@
 		"local": "../ampm-test/wpf-test/content"
 	},
 	"persistence": {
-		"launchCommand": "",
+		"launchCommand": "../ampm-test/WPF/Client/bin/Debug/Client.exe {config}",
 		"startupTimeout": 10000,
 		"heartbeatTimeout": 5000,
 		"shutdownSchedule": "0 0 * * 1-5",
@@ -20,7 +20,8 @@
 		"restartSchedule": "0 0 * * 1-5"
 	},
 	"network": {
-		"peers": ["devopsbeta", "I14"]
+		"peers": ["devopsbeta", "I14"],
+		"master": "I14"
 	},
 	"logging": {
 		"file": {

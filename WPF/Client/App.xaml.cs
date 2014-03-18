@@ -13,6 +13,7 @@ namespace Client
     {
         public App()
         {
+            Ampm.Dispatcher = Dispatcher;
             Startup += App_Startup;
 
             // Send heartbeats every frame.

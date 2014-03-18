@@ -33,6 +33,7 @@ exports.SharedState = Backbone.Model.extend({
 		// Listen for TCP events from the app.
 		$$network.transports.socketToApp.sockets.on('connection', _.bind(function(socket) {
 			socket.on('mouse', _.bind(function(data) {
+				console.log(data);
 				this.set('x', data.x);
 				this.set('y', data.y);
 			}, this));

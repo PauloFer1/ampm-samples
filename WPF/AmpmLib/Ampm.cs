@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Windows.Threading;
 using Bespoke.Common.Osc;
 using Microsoft.Diagnostics.Tracing;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using WebSocket4Net;
 
 namespace AmpmLib
@@ -31,9 +33,11 @@ namespace AmpmLib
 
         private static Queue<Tuple<string, object>> _MessageQueue = new Queue<Tuple<string, object>>();
 
+        public static Dispatcher Dispatcher { get; set; }
+
         static Ampm()
         {
-            _SocketToServer = new SocketIOClient.Client("http://localhost:3001");
+            _SocketToServer = new SocketIOClient.Client("http://localhost:3001") { RetryConnectionAttempts = 99 };
             _SocketToServer.Opened += Socket_Opened;
             _SocketToServer.Connect();
             _SocketToServer.SocketConnectionClosed += (sender, e) => _SocketToServer.Connect();
@@ -139,14 +143,26 @@ namespace AmpmLib
 
         private static void Server_MessageReceived(object sender, OscMessageReceivedEventArgs e)
         {
-            string data = e.Message.Data.FirstOrDefault() as string;
-            /*
-            Dispatcher.BeginInvoke((Action)(() =>
+            if (OnAmpmMessage == null)
             {
-                AppState.Instance.SharedState = data == null ? null : JObject.Parse(data);
-            }), DispatcherPriority.Input);
-             */
+                return;
+            }
+
+            string name = e.Message.Address.Replace("/", string.Empty);
+            string json = e.Message.Data.FirstOrDefault() as string;
+            JToken data = null;
+            if (json != null)
+            {
+                data = JObject.Parse(json);
+            }
+
+            Dispatcher.BeginInvoke(new Action(() =>
+            {
+                OnAmpmMessage(null, new Tuple<string, JToken>(name, data));
+            }));
         }
+
+        public static event EventHandler<Tuple<string, JToken>> OnAmpmMessage;
 
         private class TrackEvent
         {
