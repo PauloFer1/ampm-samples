@@ -24,11 +24,11 @@ IF %ERRORLEVEL% == 0 (
 )
 
 :: Run the local ampm and just watch the restart file.
-cd app\ampm
+CD app\ampm
 supervisor ^
 	--watch restart.json ^
 	--ignore * ^
 	--extensions js,json ^
 	--no-restart-on error ^
 	--quiet ^
-	-- server.js ..\..\config.live.json
+	-- server.js ..\..\config.json live
