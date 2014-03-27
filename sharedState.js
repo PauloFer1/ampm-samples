@@ -24,7 +24,7 @@ exports.SharedState = Backbone.Model.extend({
 	// This is the object that will be sent to other peers.
 	shared: null,
 
-	initialize: function() {
+	boot: function() {
 
 		// By default just send the model's attributes, but you could create
 		// another object and sync it if you don't want to send everything.
