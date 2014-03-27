@@ -63,6 +63,14 @@ namespace AmpmLib
         }
 
         /// <summary>
+        /// Send a heartbeat message.
+        /// </summary>
+        public static void Heart()
+        {
+            UdpEvent("heart");
+        }
+
+        /// <summary>
         /// Log a usage event.
         /// </summary>
         /// <param name="category"></param>

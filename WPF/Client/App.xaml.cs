@@ -17,7 +17,7 @@ namespace Client
             Startup += App_Startup;
 
             // Send heartbeats every frame.
-            CompositionTarget.Rendering += (sender, e) => Ampm.UdpEvent("heart");
+            CompositionTarget.Rendering += (sender, e) => Ampm.Heart();
 
             // Log crashes.
             DispatcherUnhandledException += (sender, e) =>
