@@ -9,10 +9,10 @@
 				"live": "http://mvi_video:funk0@content.stimulant.io/mvi_video/category/6",
 				"draft": "http://mvi_video:funk0@content.stimulant.io/mvi_video/category/6"
 			},
-			"local": "../content"
+			"local": "../../content"
 		},
 		"persistence": {
-			"launchCommand": "'c:\\Program Files\\Internet Explorer\\iexplore.exe' http://localhost/ampm-web-test-dev/",
+			"launchCommand": "'c:\\Program Files\\Internet Explorer\\iexplore.exe' http://localhost/ampm-web-test-live/",
 			"startupTimeout": 10,
 			"heartbeatTimeout": 5
 		},
@@ -25,7 +25,7 @@
 				"tags": "WEB-test"
 			},
 			"file": {
-				"filename": "../logs/server.log"
+				"filename": "../../logs/server.log"
 			}
 		},
 		"sharedState": "../../../sharedState.js"
@@ -37,6 +37,9 @@
 		"contentUpdater": {
 			"local": "../ampm-test/WEB-test/content"
 		},
+		"persistence": {
+			"launchCommand": "'c:\\Program Files\\Internet Explorer\\iexplore.exe' http://localhost/ampm-web-test-dev/"
+		},
 		"logging": {
 			"loggly": {
 				"enabled": false
@@ -46,6 +49,9 @@
 			},
 			"console": {
 				"timestamp": false
+			},
+			"file": {
+				"enabled": false
 			}
 		},
 		"sharedState": "../ampm-test/sharedState.js"
