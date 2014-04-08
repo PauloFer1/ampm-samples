@@ -66,10 +66,10 @@ void AMPMClient::sendEvent(std::string category, std::string action, std::string
 	message.setAddress("event");
 
 	JsonTree arguments;
-	arguments.pushBack( JsonTree("category", category) );
-	arguments.pushBack( JsonTree("action", action) );
-	arguments.pushBack( JsonTree("label", label) );
-	arguments.pushBack( JsonTree("value", value) );
+	arguments.pushBack( JsonTree("Category", category) );
+	arguments.pushBack( JsonTree("Action", action) );
+	arguments.pushBack( JsonTree("Label", label) );
+	arguments.pushBack( JsonTree("Value", value) );
 	message.addStringArg(arguments.serialize());
 	mSender.sendMessage(message);
 }
