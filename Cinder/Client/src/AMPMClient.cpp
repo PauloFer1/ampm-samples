@@ -46,6 +46,7 @@ void AMPMClient::update()
 
 		if (message.getAddress() == "/config")
 		{
+			// do something with config if you want here
 		}
 	}
 
@@ -53,6 +54,7 @@ void AMPMClient::update()
 	sendHeartbeat();
 }
 
+// send heartbeat to server
 void AMPMClient::sendHeartbeat()
 {
 	osc::Message message;
@@ -60,6 +62,7 @@ void AMPMClient::sendHeartbeat()
 	mSender.sendMessage(message);
 }
 
+// send analytics event to server
 void AMPMClient::sendEvent(std::string category, std::string action, std::string label, int value)
 {
 	osc::Message message;
@@ -74,6 +77,7 @@ void AMPMClient::sendEvent(std::string category, std::string action, std::string
 	mSender.sendMessage(message);
 }
 
+// send log event to server
 void AMPMClient::log(LogEventLevel level, std::string msg, char const* line, int lineNum)
 {
 	osc::Message message;
@@ -82,10 +86,13 @@ void AMPMClient::log(LogEventLevel level, std::string msg, char const* line, int
 	JsonTree arguments;
 	arguments.pushBack( JsonTree("level", LogEventLevelToString.at(level)) );
 	arguments.pushBack( JsonTree("message", msg) );
+	arguments.pushBack( JsonTree("line", line) );
+	arguments.pushBack( JsonTree("lineNum", lineNum) );
 	message.addStringArg(arguments.serialize());
 	mSender.sendMessage(message);
 }
 
+// strip out file for sending as part of log info
 char const * AMPMClient::getFileForLog( char const *file )
 {
 	return strrchr(file, '\\') ? strrchr(file, '\\') + 1 : file;
