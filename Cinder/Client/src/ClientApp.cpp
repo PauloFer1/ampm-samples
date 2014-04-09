@@ -1,5 +1,9 @@
 #include "cinder/app/AppNative.h"
 #include "cinder/gl/gl.h"
+#include "cinder/Text.h"
+#include "cinder/gl/Texture.h"
+
+#include "cinder/Json.h"
 
 #include "AMPMClient.h"
 
@@ -10,14 +14,22 @@ using namespace std;
 class ClientApp : public AppNative {
 	AMPMClientRef mAMPM;
 	Rectf infoRect, warnRect, errorRect, eventRect, crashRect;
+	ci::TextBox* mTextBox;
+	ci::Surface	mTextSurface;
 
   public:
+	void prepareSettings( Settings *settings );
 	void setup();
 	void mouseDown( MouseEvent event );	
 	void keyDown( KeyEvent event );
 	void update();
 	void draw();
 };
+
+void ClientApp::prepareSettings( Settings *settings )
+{
+	//settings->enableConsoleWindow();
+}
 
 void ClientApp::setup()
 {
@@ -32,6 +44,23 @@ void ClientApp::setup()
 	errorRect = Rectf(warnRect.x2, 0, warnRect.x2 + width, height);
 	eventRect = Rectf(errorRect.x2, 0, errorRect.x2 + width, height);
 	crashRect = Rectf(eventRect.x2, 0, eventRect.x2 + width, height);
+
+	// text view
+	mTextBox = new TextBox();
+	mTextBox->setSize( Vec2i(800, 600) );
+
+	// read out json
+	app::console() << "Arguments: " << std::endl;
+	for( vector<string>::const_iterator argIt = getArgs().begin(); argIt != getArgs().end(); ++argIt )
+	{
+		app::console() << *argIt << std::endl;
+	}
+
+	if (getArgs().size() > 1)
+	{
+		JsonTree json = JsonTree(getArgs()[1]);
+		mTextBox->setText(json.serialize());
+	}
 }
 
 void ClientApp::mouseDown( MouseEvent event )
@@ -82,6 +111,10 @@ void ClientApp::draw()
 	gl::drawStringCentered("event", eventRect.getCenter());
 	gl::drawStrokedRoundedRect(crashRect, 8.0f, 10);
 	gl::drawStringCentered("crash", crashRect.getCenter());
+
+	mTextSurface = mTextBox->render();
+	if ( mTextSurface ) 
+		gl::draw( mTextSurface, Vec2f(0, 50) );
 }
 
 CINDER_APP_NATIVE( ClientApp, RendererGl )
