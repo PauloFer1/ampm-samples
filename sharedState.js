@@ -3,8 +3,8 @@ var fs = require('fs'); // http://nodejs.org/api/fs.html
 var os = require('os'); // http://nodejs.org/api/os.html
 
 // Figure out where the modules are.
-var devModules = '../ampm/node_modules';
-var liveModules = 'ampm/node_modules';
+var devModules = path.resolve('../ampm/node_modules');
+var liveModules = path.resolve('ampm/node_modules');
 var node_modules = '';
 if (fs.existsSync(devModules)) {
 	node_modules = devModules;
