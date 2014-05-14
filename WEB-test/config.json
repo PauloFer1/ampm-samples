@@ -52,6 +52,9 @@
 			},
 			"file": {
 				"enabled": false
+			},
+			"google": {
+				"enabled": false
 			}
 		},
 		"sharedState": "../ampm-test/sharedState.js"
