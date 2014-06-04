@@ -62,8 +62,8 @@ var ampm = Backbone.Model.extend({}, {
 });
 
 // Catch all errors and stop sending heartbeats so we get restarted.
-window.onerror = function(message, url, lineNumber) {
+window.onerror = function(errorMsg, url, lineNumber, column, errorObj) {
 	ampm.crashed = true;
-	ampm.error('Error on line ' + lineNumber + ' ' + message);
+	ampm.error('Error: ' + errorMsg + '\nScript: ' + url + '\nLine: ' + lineNumber + '\nColumn: ' + column + '\nStack: ' + errorObj.stack);
 	return false;
 };
