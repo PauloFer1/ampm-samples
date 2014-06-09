@@ -37,12 +37,13 @@ namespace Client
 
         protected override void OnMouseMove(MouseEventArgs e)
         {
+            /*
             Ampm.TcpEvent("mouse", new
             {
                 x = e.GetPosition(_DotContainer).X,
                 y = e.GetPosition(_DotContainer).Y,
             });
-
+            */
             base.OnMouseMove(e);
         }
 
