@@ -5,6 +5,7 @@ APP.View = Backbone.View.extend({
 		'click #hang': '_onHangClicked',
 		'click #log': '_onLogClicked',
 		'click #event': '_onEventClicked',
+		'click #console': '_onConsoleClicked'
 	},
 
 	_subView: null,
@@ -43,5 +44,9 @@ APP.View = Backbone.View.extend({
 	_onEventClicked: function() {
 		// Example of how to track events.
 		ampm.logEvent('app event', 'clicked', 'button', 2);
+	},
+
+	_onConsoleClicked: function() {
+		window.open('http://localhost:81');
 	}
 });

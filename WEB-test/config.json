@@ -14,7 +14,8 @@
 		"persistence": {
 			"launchCommand": "'c:\\Program Files\\Internet Explorer\\iexplore.exe' http://localhost/ampm-web-test-live/",
 			"startupTimeout": 10,
-			"heartbeatTimeout": 5
+			"heartbeatTimeout": 5,
+			"hideCursor": true
 		},
 		"network": {
 			"peers": ["devopsbeta", "I14"],
@@ -38,7 +39,8 @@
 			"local": "../ampm-test/WEB-test/content"
 		},
 		"persistence": {
-			"launchCommand": "'c:\\Program Files\\Internet Explorer\\iexplore.exe' http://localhost/ampm-web-test-dev/"
+			"launchCommand": "'c:\\Program Files\\Internet Explorer\\iexplore.exe' http://localhost/ampm-web-test-dev/",
+			"hideCursor": false
 		},
 		"logging": {
 			"loggly": {
