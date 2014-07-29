@@ -15,7 +15,8 @@
 			"launchCommand": "'c:\\Program Files\\Internet Explorer\\iexplore.exe' http://localhost/ampm-web-test-live/",
 			"startupTimeout": 10,
 			"heartbeatTimeout": 5,
-			"hideCursor": true
+			"hideCursor": true,
+			"pingList": ["8.8.8.8"]
 		},
 		"network": {
 			"peers": ["devopsbeta", "I14"],
@@ -26,7 +27,7 @@
 				"tags": "WEB-test"
 			},
 			"file": {
-				"filename": "../../logs/server.log"
+				"filename": "../../logs/server"
 			}
 		},
 		"sharedState": "../../../sharedState.js"
@@ -53,10 +54,11 @@
 				"timestamp": false
 			},
 			"file": {
-				"enabled": false
+				"enabled": true,
+				"filename": "../ampm-test/WEB-test/logs/server"
 			},
 			"google": {
-				"enabled": true
+				"enabled": false
 			}
 		},
 		"sharedState": "../ampm-test/sharedState.js"
