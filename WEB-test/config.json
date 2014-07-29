@@ -41,7 +41,8 @@
 		},
 		"persistence": {
 			"launchCommand": "'c:\\Program Files\\Internet Explorer\\iexplore.exe' http://localhost/ampm-web-test-dev/",
-			"hideCursor": false
+			"hideCursor": false,
+			"maxMemory": 40000000
 		},
 		"logging": {
 			"loggly": {
