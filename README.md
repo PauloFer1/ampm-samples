@@ -1,4 +1,5 @@
-ampm-test
+ampm-samples
 =========
 
-Test app for the ampm tools.
+Sample and test apps for the ampm tools.
+https://github.com/stimulant/ampm
