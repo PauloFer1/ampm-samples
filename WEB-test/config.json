@@ -12,7 +12,7 @@
 			"local": "../../content"
 		},
 		"persistence": {
-			"launchCommand": "'c:\\Program Files\\Internet Explorer\\iexplore.exe' http://localhost/ampm-web-test-live/",
+			"launchCommand": "'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe' -new-window -incognito -kiosk -js-flags='--expose-gc' -overscroll-history-navigation=0 http://localhost/ampm-web-test-live/",
 			"startupTimeout": 10,
 			"heartbeatTimeout": 5,
 			"hideCursor": true,
@@ -40,9 +40,9 @@
 			"local": "../ampm-test/WEB-test/content"
 		},
 		"persistence": {
-			"launchCommand": "'c:\\Program Files\\Internet Explorer\\iexplore.exe' http://localhost/ampm-web-test-dev/",
+			"launchCommand": "'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe' -incognito -js-flags='--expose-gc' -overscroll-history-navigation=0 http://localhost/ampm-web-test-dev/",
 			"hideCursor": false,
-			"maxMemory": 40000000
+			"maxMemory": 400000000
 		},
 		"logging": {
 			"loggly": {
