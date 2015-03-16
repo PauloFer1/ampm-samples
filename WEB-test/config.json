@@ -27,7 +27,10 @@
 				"tags": "WEB-test"
 			},
 			"file": {
-				"filename": "../../logs/server"
+				"filename": "../ampm-test/WEB-test/logs/server"
+			},
+			"eventFile": {
+				"filename": "../ampm-test/WEB-test/logs/event-{date}.tsv"
 			}
 		},
 		"sharedState": "../ampm-test/sharedState.js"
