@@ -27,20 +27,20 @@
 				"tags": "WEB-test"
 			},
 			"file": {
-				"filename": "../ampm-test/WEB-test/logs/server"
+				"filename": "../ampm-samples/WEB-test/logs/server"
 			},
 			"eventFile": {
-				"filename": "../ampm-test/WEB-test/logs/event-{date}.tsv"
+				"filename": "../ampm-samples/WEB-test/logs/event-{date}.tsv"
 			}
 		},
-		"sharedState": "../ampm-test/sharedState.js"
+		"sharedState": "../ampm-samples/sharedState.js"
 	},
 	"dev": {
 		"appUpdater": {
-			"local": "../ampm-test/WEB-test/app"
+			"local": "../ampm-samples/WEB-test/app"
 		},
 		"contentUpdater": {
-			"local": "../ampm-test/WEB-test/content"
+			"local": "../ampm-samples/WEB-test/content"
 		},
 		"persistence": {
 			"launchCommand": "'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe' -incognito -js-flags='--expose-gc' -overscroll-history-navigation=0 http://localhost/ampm-web-test-dev/",
@@ -53,17 +53,17 @@
 			},
 			"mail": {
 				"enabled": true,
-				"host": "mail.content.stimulant.com", 
-				"username": "ampm@content.stimulant.com", 
-				"from": "ampm@content.stimulant.com", 
-				"to": "josh@stimulant.com" 
+				"host": "mail.content.stimulant.com",
+				"username": "ampm@content.stimulant.com",
+				"from": "ampm@content.stimulant.com",
+				"to": "josh@stimulant.com"
 			},
 			"console": {
 				"timestamp": false
 			},
 			"file": {
 				"enabled": true,
-				"filename": "../ampm-test/WEB-test/logs/server"
+				"filename": "../ampm-samples/WEB-test/logs/server"
 			},
 			"google": {
 				"enabled": false

@@ -40,13 +40,13 @@
 	},
 	"dev": {
 		"appUpdater": {
-			"local": "../ampm-test/wpf-test/app"
+			"local": "../ampm-samples/wpf-test/app"
 		},
 		"contentUpdater": {
-			"local": "../ampm-test/wpf-test/content"
+			"local": "../ampm-samples/wpf-test/content"
 		},
 		"persistence": {
-			"launchCommand": "../ampm-test/WPF/Client/bin/Debug/Client.exe {config}"
+			"launchCommand": "../ampm-samples/WPF/Client/bin/Debug/Client.exe {config}"
 		},
 		"logging": {
 			"loggly": {
@@ -63,6 +63,6 @@
 			}
 		},
 		"permissions": null,
-		"sharedState": "../ampm-test/sharedState.js"
+		"sharedState": "../ampm-samples/sharedState.js"
 	}
 }

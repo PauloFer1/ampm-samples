@@ -31,4 +31,4 @@ supervisor ^
 	--extensions js,json ^
 	--no-restart-on error ^
 	--quiet ^
-	-- server.js ..\ampm-test\WEB-test\config.json,..\ampm-test\WEB-test\config.json,..\ampm-test\WEB-test\config.json,..\ampm-test\WEB-test\config.json live
+	-- server.js ..\ampm-samples\WEB-test\config.json,..\ampm-samples\WEB-test\config.json,..\ampm-samples\WEB-test\config.json,..\ampm-samples\WEB-test\config.json live

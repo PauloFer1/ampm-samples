@@ -38,7 +38,7 @@
 			"local": ""
 		},
 		"persistence": {
-			"launchCommand": "../ampm-test/Cinder/Client/vc11/Debug/Client.exe {config}"
+			"launchCommand": "../ampm-samples/Cinder/Client/vc11/Debug/Client.exe {config}"
 		},
 		"logging": {
 			"loggly": {
@@ -54,6 +54,6 @@
 				"enabled": false
 			}
 		},
-		"sharedState": "../ampm-test/sharedState.js"
+		"sharedState": "../ampm-samples/sharedState.js"
 	}
 }
