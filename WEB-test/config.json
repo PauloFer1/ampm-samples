@@ -1,73 +1,71 @@
 {
-	"default": {
-		"appUpdater": {
-			"remote": "http://content.stimulant.io/uploads/mvi_video_app/mvi_video.zip",
-			"local": "../"
-		},
-		"contentUpdater": {
-			"remote": {
-				"live": "http://mvi_video:funk0@content.stimulant.io/mvi_video/category/6",
-				"draft": "http://mvi_video:funk0@content.stimulant.io/mvi_video/category/6"
-			},
-			"local": "../../content"
-		},
-		"persistence": {
-			"launchCommand": "'C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe' -private-window http://localhost/ampm-web-test-live/",
-			"startupTimeout": 10,
-			"heartbeatTimeout": 5,
-			"hideCursor": true,
-			"pingList": ["8.8.8.8"]
-		},
-		"network": {
-			"peers": ["devopsbeta", "I14"],
-			"master": "I14"
-		},
-		"logging": {
-			"loggly": {
-				"tags": "WEB-test"
-			},
-			"file": {
-				"filename": "../ampm-samples/WEB-test/logs/server"
-			},
-			"eventFile": {
-				"filename": "../ampm-samples/WEB-test/logs/event-{date}.tsv"
-			}
-		},
-		"sharedState": "../ampm-samples/sharedState.js"
-	},
-	"dev": {
-		"appUpdater": {
-			"local": "../ampm-samples/WEB-test/app"
-		},
-		"contentUpdater": {
-			"local": "../ampm-samples/WEB-test/content"
-		},
-		"persistence": {
-			"launchCommand": "'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe' -incognito -js-flags='--expose-gc' -overscroll-history-navigation=0 http://localhost/ampm-web-test-dev/",
-			"hideCursor": false,
-			"maxMemory": 400000000
-		},
-		"logging": {
-			"loggly": {
-				"enabled": false
-			},
-			"mail": {
-				"enabled": true,
-				"host": "mail.content.stimulant.com",
-				"username": "ampm@content.stimulant.com",
-				"from": "ampm@content.stimulant.com",
-				"to": "josh@stimulant.com"
-			},
-			"console": {
-				"timestamp": false
-			},
-			"file": {
-				"enabled": true,
-				"filename": "../ampm-samples/WEB-test/logs/server"
-			},
-			"google": {
-				"enabled": false
-			}
-		}
-	}
+    "default": {
+        "appUpdater": {
+            "remote": "http://content.stimulant.io/uploads/mvi_video_app/mvi_video.zip",
+            "local": "../"
+        },
+        "contentUpdater": {
+            "remote": {
+                "live": "http://mvi_video:funk0@content.stimulant.io/mvi_video/category/6",
+                "draft": "http://mvi_video:funk0@content.stimulant.io/mvi_video/category/6"
+            },
+            "local": "../../content"
+        },
+        "persistence": {
+            "launchCommand": "'C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe' -private-window http://localhost/ampm-web-test-live/",
+            "startupTimeout": 10,
+            "heartbeatTimeout": 5,
+            "pingList": ["8.8.8.8"]
+        },
+        "network": {
+            "peers": ["devopsbeta", "I14"],
+            "master": "I14"
+        },
+        "logging": {
+            "loggly": {
+                "tags": "WEB-test"
+            },
+            "file": {
+                "filename": "../ampm-samples/WEB-test/logs/server"
+            },
+            "eventFile": {
+                "filename": "../ampm-samples/WEB-test/logs/event-{date}.tsv"
+            }
+        },
+        "sharedState": "../ampm-samples/sharedState.js"
+    },
+    "dev": {
+        "appUpdater": {
+            "local": "../ampm-samples/WEB-test/app"
+        },
+        "contentUpdater": {
+            "local": "../ampm-samples/WEB-test/content"
+        },
+        "persistence": {
+            "launchCommand": "'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe' -incognito -js-flags='--expose-gc' -overscroll-history-navigation=0 http://localhost/ampm-web-test-dev/",
+            "maxMemory": 400000000
+        },
+        "logging": {
+            "loggly": {
+                "enabled": false
+            },
+            "mail": {
+                "enabled": true,
+                "host": "mail.content.stimulant.com",
+                "username": "ampm@content.stimulant.com",
+                "from": "ampm@content.stimulant.com",
+                "to": "josh@stimulant.com"
+            },
+            "console": {
+                "timestamp": false
+            },
+            "file": {
+                "enabled": true,
+                "filename": "../ampm-samples/WEB-test/logs/server"
+            },
+            "google": {
+                "enabled": false
+            }
+        }
+    }
 }
